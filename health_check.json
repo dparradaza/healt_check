@@ -1,0 +1,30 @@
+{
+  "test":
+  [
+    {
+      "name": "Postman - GET",
+      "url": "https://postman-echo.com/get?test=123"
+    },
+    {
+      "name": "Postman - 401",
+      "url": "https://postman-echo.com/digest-auth"
+    },
+    {
+      "name": "Correios - SOAP",
+      "url": "http://ws.correios.com.br/calculador/CalcPrecoPrazo.asmx"
+    },
+    {
+      "name": "Pelicula",
+      "url": "http://172.23.27.217:8080/Back/app/pelicula"
+    },
+    {
+      "name": "App login",
+      "url": "http://172.23.27.217:8080/Back/app/acceso --data '{\"usuario\":\"FELIPE_EMPLEADO\",\"contrasena\":\"pipe\"}'"
+    },
+    {
+      "name": "App Flask",
+      "url": "http://127.0.0.1:5000/"
+    }
+
+  ]
+}
