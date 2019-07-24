@@ -10,8 +10,8 @@
       "url": "http://172.23.27.217:8080/Back/app/acceso"
     },
     {
-      "name": "App Esri",
-      "url": "http://172.23.27.217:5001/"
+      "name": "App funcion",
+      "url": "http://172.23.27.217:8080/Back/app/funcion"
     }
 
   ]
