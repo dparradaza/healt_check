@@ -1,12 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: healthcheck.TestExecutor
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 39.996 sec <<< FAILURE!
-healthCheckStatus[App login](healthcheck.TestExecutor)  Time elapsed: 11.386 sec  <<< FAILURE!
-junit.framework.AssertionFailedError: HTTP Status: 505
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.723 sec <<< FAILURE!
+healthCheckStatus[App Esri](healthcheck.TestExecutor)  Time elapsed: 0.02 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: Conexión rehusada (Connection refused)
 	at junit.framework.Assert.fail(Assert.java:57)
 	at junit.framework.TestCase.fail(TestCase.java:227)
-	at healthcheck.TestExecutor.healthCheckStatus(TestExecutor.java:84)
+	at healthcheck.TestExecutor.healthCheckStatus(TestExecutor.java:66)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

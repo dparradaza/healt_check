@@ -6,4 +6,4 @@ def main():
     return render_template('health_check.html')
 
 if __name__ == "__main__":
-    app.run()
+    app.run('181.134.18.92', 5001)

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="6" failures="1" name="healthcheck.TestExecutor" time="38.871" errors="0" skipped="0">
+<testsuite tests="3" failures="1" name="healthcheck.TestExecutor" time="0.197" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/home/diego/jdk1.8.0_211/jre/lib/amd64"/>
     <property name="java.vm.version" value="25.211-b12"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/diego/Documentos/health-check-api-master"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/diego/Documentos/Repositorios/healt_check"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/diego/Documentos/health-check-api-master"/>
+    <property name="user.dir" value="/home/diego/Documentos/Repositorios/healt_check"/>
     <property name="java.runtime.version" value="1.8.0_211-b12"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/home/diego/jdk1.8.0_211/jre/lib/endorsed"/>
@@ -62,15 +62,13 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="healthcheck.TestExecutor" name="healthCheckStatus[Postman - GET]" time="1.574"/>
-  <testcase classname="healthcheck.TestExecutor" name="healthCheckStatus[Postman - 401]" time="0.94"/>
-  <testcase classname="healthcheck.TestExecutor" name="healthCheckStatus[Correios - SOAP]" time="17.383"/>
-  <testcase classname="healthcheck.TestExecutor" name="healthCheckStatus[Pelicula]" time="7.585"/>
-  <testcase classname="healthcheck.TestExecutor" name="healthCheckStatus[App login]" time="11.386">
-    <failure message="HTTP Status: 505" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: HTTP Status: 505
+  <testcase classname="healthcheck.TestExecutor" name="healthCheckStatus[Pelicula]" time="0.15"/>
+  <testcase classname="healthcheck.TestExecutor" name="healthCheckStatus[App login]" time="0.027"/>
+  <testcase classname="healthcheck.TestExecutor" name="healthCheckStatus[App Esri]" time="0.02">
+    <failure message="Conexión rehusada (Connection refused)" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Conexión rehusada (Connection refused)
 	at junit.framework.Assert.fail(Assert.java:57)
 	at junit.framework.TestCase.fail(TestCase.java:227)
-	at healthcheck.TestExecutor.healthCheckStatus(TestExecutor.java:84)
+	at healthcheck.TestExecutor.healthCheckStatus(TestExecutor.java:66)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -112,5 +110,4 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
   </testcase>
-  <testcase classname="healthcheck.TestExecutor" name="healthCheckStatus[App Flask]" time="0.003"/>
 </testsuite>
